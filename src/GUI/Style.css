@@ -1,0 +1,39 @@
+root {
+    display: block;
+}
+
+.root {
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#loginText {
+   -fx-font-size: 40px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+   -fx-margin-bottom: 25px;
+}
+
+#actiontarget {
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
+
+.TextField {
+    -fx-font-size: 20px;
+}
+.button {
+    -fx-font-size: 15px;
+    -fx-width: 100px;
+}
+
+.button:hover {
+    -fx-background-color: #345678;
+}

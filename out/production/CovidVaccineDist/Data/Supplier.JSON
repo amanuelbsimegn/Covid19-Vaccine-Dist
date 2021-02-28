@@ -1,0 +1,5 @@
+[
+  { "id": 12345, "name": "Moderna", "city": "Rockville", "phoneNumber": "123-456-7890" },
+  { "id": 12346, "name": "Pfizer", "city": "Fair Field", "phoneNumber": "123-456-7890" },
+  { "id": 12346, "name": "AstraZeneca", "city": "Los Angeles", "phoneNumber": "123-456-7890" }
+]
