@@ -6,12 +6,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:controller="GUI.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<GridPane fx:controller="GUI.LogIn.LogInController" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
 
-<!--	<padding><Insets top="25" right="25" bottom="10" left="25" /></padding>-->
+	<padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
 
 	<GridPane alignment="center" hgap="15" vgap="15">
-		<Text id="loginText" textAlignment="CENTER" text="LOG IN" GridPane.rowIndex="0" GridPane.columnSpan="2" />
+		<Text id="loginText" text="Log in" GridPane.rowIndex="0" GridPane.columnSpan="2" />
 
 		<Label text="User Name" GridPane.rowIndex="1" GridPane.columnIndex="0" />
 		<TextField fx:id="userNameText" GridPane.rowIndex="1" GridPane.columnIndex="1" />
@@ -25,6 +25,6 @@
 	</GridPane>
 
 	<stylesheets>
-		<URL value="@Style.css" />
+		<URL value="@../Style.css" />
 	</stylesheets>
 </GridPane>

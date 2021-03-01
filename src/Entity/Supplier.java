@@ -3,7 +3,7 @@ package Entity;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Supplier {
+public class Supplier extends Model {
 	private Integer id;
 	private String name;
 	private String city;
@@ -32,33 +32,31 @@ public class Supplier {
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
+
+	@Override
+	public List<Model> getData() {
+		LoadData();
+		return suppliers;
+	}
 	// END Getters
 
-	// START Models
-//	public List<Supplier> SelectAll() {
-//		List<Supplier> result = new ArrayList<>();
-//		result.addAll(suppliersData);
-//		return result;
-//	}
-//	public List<Supplier> SelectAllBy( String att, String val ) {
-//		List<Supplier> result = new ArrayList<>();
-//
-//		for (Supplier s : suppliersData) {
-//
-//		}
-//
-//		return result;
-//	}
-//	public boolean Delete(Supplier supplier) {
-//		return suppliersData.remove(supplier);
-//	}
-	// END Models
+	// START Data
+	private static List<Model> suppliers = null;
+	public static void LoadData() {
+		if (suppliers != null) return;
+
+		suppliers = new ArrayList<>();
+		suppliers.add( new Supplier(1, "Moderna", "Des Moines", "123-456-7890") );
+		suppliers.add( new Supplier(2, "Pfizer", "Fair Field", "123-456-7890") );
+		suppliers.add( new Supplier(3, "AstraZeneca", "New York", "123-456-7890") );
+	}
+	// END Data
 
 	// START Methods
 	@Override
 	public String toString() {
 		return String.format(
-			"ID: %d.\nName: %s.\nCity: %s.\nPhone Number: %s.\n", id, name, city, phoneNumber
+			"ID: %d. Name: %s. City: %s. Phone Number: %s.", id, name, city, phoneNumber
 		);
 	}
 	// END Methods
